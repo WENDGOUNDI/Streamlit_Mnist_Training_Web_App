@@ -41,7 +41,7 @@ if st.button('Train the model'):
     "Build Model is"
     tensorflow.keras.utils.plot_model(model,to_file="model.png",)
     
-    image = Image.open("C:/Users/savadogo_abdoul/Desktop/Learn/image_classifcation_streamlit/model.png")
+    image = Image.open("model.png")
     st.image(image)  #st.image(image, caption='Sunrise by the mountains')
     #st.spinner(text="Training In Progress...")
     with st.spinner('Training In Progress...'):
